@@ -1,17 +1,30 @@
 package data.models;
 
-public class Passengers {
+public class Passenger {
     private String name;
     private String phoneNumber;
     private String email;
     private String destination;
 
-    public Passengers(String name, String phoneNumber, String email, String destination) {
-        this.name = name;
+    public Passenger(String name, String phoneNumber, String email, String destination) {
+        this(name);
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.destination = destination;
     }
+
+    public Passenger(String name) {
+        this.name = name;
+    }
+
+    public Passenger() {
+    }
+
+    public Passenger(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+    }
+
 
     public String getName() {
         return name;

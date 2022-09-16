@@ -1,5 +1,3 @@
-package services;
-
 import data.models.EconomyClass;
 import data.models.FirstClass;
 
@@ -7,14 +5,11 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
-
     static EconomyClass economyClass = new EconomyClass();
     static FirstClass firstClass = new FirstClass();
-
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         bookingMenu();
     }
 

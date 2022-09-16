@@ -1,9 +1,20 @@
 package data.models;
 
-import static org.junit.jupiter.api.Assertions.*;
-class EconomyClassTest {
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-    @org.junit.jupiter.api.BeforeEach
+class EconomyClassTest {
+    EconomyClass economyClass;
+    Passenger passenger;
+
+    @BeforeEach
     void setUp() {
+        passenger = new Passenger("me", "08133856783");
+        economyClass = new EconomyClass();
+    }
+
+    @Test
+    void testThatSeatCanBeBooked() {
+
     }
 }
